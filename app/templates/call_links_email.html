@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>presenter links</title>
+</head>
+<body>
+<p>The presenter call links for session <b>{{event_name}}</b> is: </p>
+<table style="width:100%">
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Link</th>
+    </tr>
+    {% for i in all_data %}
+    <tr>
+        <td>{{i['name']}}</td>
+        <td>{{i['email']}}</td>
+        <td>{{i['link']}}</td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
